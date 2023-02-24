@@ -1,0 +1,301 @@
+
+
+body {
+	display:flex ;
+	flex-direction: column;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	background-color: #c4e4e7;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Space Mono', monospace;
+
+
+}
+
+h1 {
+	color: #3b5e60;
+	font-size: 18px;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+input {
+	order: none;
+    background-color: #F3F8FB;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: right;
+    color: #00474B;
+    font-weight: 700;
+}
+
+input:focus {
+	outline-color: #8bdad0;
+}
+.caixa {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 600px;
+	height: 100px;
+	padding: 15px 15px 0 0;
+
+}
+.cabecalho_imagem {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.conta {
+	display: flex;
+	max-width: 600px;
+	width: 100%;
+	background-color: white;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.conta-total  {
+	 display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    flex-grow: 1;
+    max-width: 45%;
+    margin: 20px;
+    color: #4b5b5c;
+    font-size: 12px;
+}
+#contaTotal {
+	background-image: url('images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+}
+
+#numeroPessoas{ 
+ 	background-image: url('images/icon-person.svg');
+   	background-repeat: no-repeat;
+    background-position: 10px 7px;
+ }
+
+ .botoes {
+ 	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+ .gorjetaValor, #gorjetaValor {
+ 	 width: 30%;
+    margin: 10px 0;
+ }
+
+ .gorjetaValor{
+ 	padding: 0.5rem 0;
+    background-color: #00474B;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+ }
+
+ .gorjetaValor:hover{
+	background-color: #9FE8DF;
+    color: #00474B;
+ }
+
+ #gorjetaValor {
+  	width: 18%;
+  }
+
+  button, input {
+  	font-family: 'Space Mono', monospace;
+  }
+
+  button {
+  	width: 240px;
+  	align-items: center;
+  	justify-content: center;
+  	cursor: pointer;
+  }
+
+
+
+.flexbox {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	color: #f5ffff;
+	padding: 20px 20px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+
+.totalPessoa {
+	 color: #659395;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+p {
+	margin: 0;
+}
+
+#limpar {
+	justify-content:center;
+    background-color: #26C2AD;
+    border: none;
+    padding: 0.6rem 4rem;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #00474B;
+    font-weight: 700;
+}
+
+#limpar:hover {
+	background-color: #9FE8DF;
+
+}
+
+
+#total, #valorPessoa {
+   
+}
+
+
+.mostrarValor {
+	 color: #2DC0AB;
+    font-size: 26px;
+    font-weight: 700;
+    transform: translateY(-5px);
+}
+
+
+.resultado {
+	width: 100%;
+	width: 240px;
+	flex-direction: column;
+	flex-grow: 1;
+	background-color: #00474b;
+	border-radius: 15px;
+	margin:15px;
+	padding:15px;
+	text-align: justify;
+} 
+
+.resultado p {
+	text-align: left;
+}
+
+
+ .active {
+  	background-color: #9FE8DF;
+    color: #00474B;
+  }
+
+ .desactive {
+  	background-color: #0D686D;
+  }
+
+.erro{
+    border: #DE8C78;
+    outline-color: #DE8C78;
+    color: #DE8C78;
+}
+
+.erro:focus {
+	border: #DE8C78;
+    outline-color: #DE8C78;
+    color: #DE8C78;
+}
+
+
+
+
+ .attribution { font-size: 15px; 
+ 	text-align: center; 
+ 	padding-top: 30px;}
+
+ .attribution a { color: hsl(228, 45%, 44%); }
+
+ @media (max-width: 560px){
+    
+    .caixa{
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+
+    .conta {
+    	flex-direction: column;
+    }
+
+    .conta-total {
+        /* border: 1px solid black; */
+        max-width: 100%;
+        margin: 20px 35px;
+        
+    }
+
+    .resultado{
+    	flex-direction: column;
+        /* border: 1px solid yellow; */
+        margin: 20px 35px;
+       
+        flex-grow: 1;
+    }
+
+    .gorjetavalor{
+        width: 130px;
+        margin: 10px 5px;
+    }
+
+    #gorjetaValor{
+        width: 108px;
+        max-width: 30%;
+    }
+
+    .flexbox {
+        padding: 20px 30px;
+    }
+
+}
+
+@media (max-width: 350px){
+	 .caixa,.conta{
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+
+    .gorjetaValor{
+        width: 100px;
+        margin: 10px 5px;
+    }
+
+    #gorjetaValor{
+        width: 80px;
+        max-width: 30%;
+    }
+
+    .flexbox{
+        padding: 20px 15px;
+    }
+
+    .conta-total{
+        /* border: 1px solid black; */
+        max-width: 100%;
+        margin: 20px 15px;
+        
+    }
+
+    .resultado{
+        /* border: 1px solid yellow; */
+        margin: 20px 15px;
+    }
+
+}

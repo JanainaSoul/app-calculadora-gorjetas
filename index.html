@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- importando as Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- _______________________LOGO/IMAGEM_________________________________________________-->
+  
+</head>
+<body>
+  <div class="caixa">
+    <!--h1 class="cabecalho"> SPLITTER</h1-->
+    <h1> <img class="cabecalho_imagem" src="images/logo.svg" alt="logo da calculadora SPLITTER"></h1>
+  </div>
+
+<!-- _______________________TOTAL CONTA_______________________________________________________-->
+
+  <div class="conta">
+
+      <div class="conta-total">
+
+          <label for="valorTotal"> Conta</label>
+          <input type="text" name="valorConta" id="contaTotal"  placeholder="0,00">
+          <br>
+
+<!--div class="selecione-gorjeta"-->
+          <label> Selecione a %</label><!-- _________SELECIONE A % GORJETA______________________-->
+
+          <span class="botoes">
+              <button class="gorjetaValor"> 5% </button>
+              <button class="gorjetaValor"> 10% </button >
+              <button class="gorjetaValor"> 15% </button >
+              <button class="gorjetaValor"> 25% </button >
+              <button class="gorjetaValor"> 50% </button >
+              <input type="text" name="personalizado" id="gorjetaValor"placeholder="CUSTOM">
+          </span>
+          <br>
+          <!--/div class="dividir-conta"-->
+          <label for="qtdPessoas"> Número de Pessoas</label> <!-- _______NUMERO DE PESSOAS__________________-->
+          <input type="number" name="qtdPessoas" id="numeroPessoas" min="1" required >
+           <!--div-->
+</div>
+  <!-- _______________RESULTADO______________________________________________________-->
+  <div class="resultado">
+
+      <span class="flexbox">
+           <p > Valor da Gorjeta<br><span class="totalPessoa"> /Pessoa</span></p>
+           <p class="mostrarValor" id="valorPessoa"> 0,00</p>
+      </span> 
+
+      <span class="flexbox">
+            <p > Total <br> <span class="totalPessoa"> /Pessoa</span></p>
+            <p class="mostrarValor"  id="total"> 0,00 </p>
+              <!--input type="text"  class="porPessoa"--> 
+      </span> 
+ <!-- ___________________RESET___________________________________________________-->
+       <button id="limpar">Limpar </button>
+  </div>
+  
+    
+ </div>
+
+
+<!-- __________________JAVASCRIPT_______________________________________ -->
+<script src="gorjeta.js"></script>
+  
+  
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/JanainaSoul" target="_blank" rel="noopener noreferrer">Janaina</a>.
+    </footer>
+</body>
+</html>
